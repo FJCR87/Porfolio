@@ -1,0 +1,146 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.PorfolioContainer{
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50px 50px;
+    grid-template-areas: "project-1 project-1" "project-2 project-3" "project-4 project-5";
+ }
+ .PorfolioContainer area{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: center;
+ }
+
+.project-1 {
+    grid-area: project-1;
+    background-image:url(images/Project-1.png);
+}
+
+.project-2 {
+    grid-area: project-2;
+    background-image:url(images/Project-1.png);
+}
+
+
+.project-3 {
+    grid-area: project-3;
+    background-image:url(images/Project-1.png);
+}
+
+
+.project-4 {
+    grid-area: project-4;
+    background-image:url(images/Project-1.png);
+}
+.project-5 {
+    grid-area: project-5;
+    background-image:url(images/Project-1.png);
+}
+
+nav{
+    background: #0082e6;
+    list-style: none;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+
+nav li a:hover{
+    color: yellowgreen;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background:#0082e6;
+    margin-top: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.footerContainer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 0;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footerBottom{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.introduction{
+    color: white;
+    background-image: url(images/back.jpg);
+}
+
+@media only screen and (max-width: 1000px){
+    .nav {
+        display: none;
+    }
+    .icons{
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    introduction{
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "project-1"
+            "project-2"
+            "project-3"
+            "project-4"
+            "project-5";
+    }
+}
